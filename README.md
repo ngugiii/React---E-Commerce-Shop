@@ -2,7 +2,7 @@
 
 This is a fully functional E-commerce project that is currently under developement. It is an upgrade to an E-commerce project that I previously developed using plain Vanilla JavaScript. Currently I am done with authentication where I used Redux and firebase and I am currenyly dealing with the cart and checkout functionality before I finally use firestore to store my products. 
 
-# Tech Stack
+## Tech Stack
 
 - JavaScript:
 
