@@ -1,5 +1,8 @@
 .footer {
     background-color: var(--dark-blue);
+    position: fixed;
+    bottom: 0;
+    width: 100%;
     color: #fff;
     font-size: 1.6rem;
     display: flex;

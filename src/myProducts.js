@@ -9,24 +9,24 @@ export const myProducts =[
         id: 1,
         name: "Red Tshirt",
         imageURL: redTshirt,
-        price: "1300 KES",
+        price: 1300,
     },
     {
         id: 2,
         name: "TECNO A36",
         imageURL: phone,
-        price: "15000 KES",
+        price: 15000,
     },
     {
         id: 3,
         name: "HP LAPTOP",
         imageURL: laptop,
-        price: "30000 KES",
+        price: 3000,
     },
     {
         id: 4,
         name: "Watch",
         imageURL: watch,
-        price: "6500 KES",
+        price: 6500,
     },
 ]

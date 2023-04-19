@@ -11,6 +11,8 @@ import { toast } from 'react-toastify';
 import { useDispatch } from 'react-redux';
 import  {SET_ACTIVE_USER,REMOVE_ACTIVE_USER}  from "../../redux/slice/authSlice"
 import ShowOnLogin, { ShowOnLogout } from '../hiddenLink/HiddenLink';
+import { useContext } from 'react';
+import { CartContext } from '../../contexts/cart.context';
 
 
 
@@ -21,20 +23,24 @@ const logo =  (
         </Link>
       </div>
 )
-const cart = (
+
+const MyCart =()=> {
+const {cartCount} = useContext(CartContext);
+  return (
   <span className={styles.cart}>
             <Link to="/cart">
               Cart
               <FaShoppingCart size={20}/>
-              <p>0</p>
+              <p>{cartCount}</p>
             </Link>
-          </span>
-
-)
+    </span>
+  )
+}
 
 const activeLink = ({isActive})=> ((isActive ? `${styles.active}` : ""))
 
 const Header = () => {
+
   const [showMenu, setShowMenu] = useState(false)
   const [displayName, setDisplayName] = useState("")
   const navigate = useNavigate();
@@ -142,11 +148,10 @@ signOut(auth).then(() => {
             </NavLink>
             </ShowOnLogin>
           </span>
-          {cart}
+        <MyCart/>
         </div>
       </nav>
       <div className={styles["menu-icon"]}>
-        {cart}
         <AiOutlineBars size={28} onClick={toggleMenu}/>
       </div>
       </div>
