@@ -21,7 +21,7 @@ export const myProducts =[
         id: 3,
         name: "HP LAPTOP",
         imageURL: laptop,
-        price: 3000,
+        price: 30000,
     },
     {
         id: 4,

@@ -93,6 +93,18 @@
   color: orangered;
   font-size: 1.7rem;
 }
+.total-p{
+  font-size: 2rem;
+  color: orangered;
+  font-weight: 700;
+}
+.total-amount{
+  font-size: 2rem;
+  font-weight: 700;
+}
+.trash{
+  cursor: pointer;
+}
 
 @media screen and (max-width: 800px) {
   .cart-item-container {
