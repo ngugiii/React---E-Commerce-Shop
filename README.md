@@ -1,6 +1,6 @@
 # A React E-commerce Website
 
-This is a fully functional E-commerce project that is currently under developement. It is an upgrade to an E-commerce project that I previously developed using Vanilla JavaScript. Currently I am done with authentication where I used Redux and firebase and I am currenyly dealing with the cart and checkout functionality before I finally use firestore to store my products. 
+This is a fully functional E-commerce website that is currently under developement. It is an upgrade to an E-commerce project that I previously developed using Vanilla JavaScript. Currently I am done with authentication where I used Redux and firebase and the cart and checkout functionality using Context API.
 
 ## Tech Stack
 
@@ -10,8 +10,8 @@ This is a fully functional E-commerce project that is currently under developeme
  
 - React js:
        
-     - Used React Framework
      - JSX
+     - Conditional Rendering
      - Styled Components
      - Context API
      - Libraries: React Router, Redux, Toastify
