@@ -1,15 +1,29 @@
-import React,{createContext, useState} from 'react'
+import React,{createContext, useState, useEffect} from 'react'
 
-import {myProducts} from "../../src/myProducts"
+import {myProducts} from "../myProducts"
+import { getCategoriesAndDocuments } from '../firebase/config';
 
-export const ProductContext = createContext({
-  products: [],
+export const CategoriesContext = createContext({
+  categoriesMap: {},
 });
 
-export const ProductsProvider = ({children}) => {
-  const [products,setProducts] = useState(myProducts);
-  const value = {products};
+export const CategoriesProvider = ({children}) => {
+  const [categoriesMap, setCategoriesMap] = useState({});
+
+  useEffect(() => {
+
+    const getCategoriesMap = async ()=>{
+      const categoryMap = await getCategoriesAndDocuments();
+      console.log(categoryMap);
+      setCategoriesMap(categoryMap);
+  
+    }
+    getCategoriesMap();
+    
+  }, [])
+
+  const value = {categoriesMap};
   return (
-    <ProductContext.Provider value={value}>{children}</ProductContext.Provider>
+    <CategoriesContext.Provider value={value}>{children}</CategoriesContext.Provider>
   )
 }

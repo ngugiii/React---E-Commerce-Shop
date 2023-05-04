@@ -4,16 +4,16 @@ import "./index.css";
 import App from "./App";
 import { Provider } from "react-redux";
 import store from "./redux/store";
-import { ProductsProvider } from "./contexts/products.context";
+import { CategoriesProvider } from "./contexts/products.context";
 import { CartProvider } from "./contexts/cart.context";
 
 ReactDOM.render(
   <Provider store={store}>
-    <ProductsProvider>
+    <CategoriesProvider>
       <CartProvider>
     <App />
       </CartProvider>
-    </ProductsProvider>
+    </CategoriesProvider>
   </Provider>,
   document.getElementById("root")
 );

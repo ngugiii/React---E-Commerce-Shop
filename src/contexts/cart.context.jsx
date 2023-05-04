@@ -56,7 +56,6 @@ export const CartProvider = ({children}) => {
     const [cartCount, setCartCount] = useState(0);
     const [cartTotal, setCartTotal] = useState(0);
 
-    console.log(cartItems.length);
     useEffect(() => {
         if (cartItems.length == 0){
             setHasProducts(false)
