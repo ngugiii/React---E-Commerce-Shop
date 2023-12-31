@@ -21,3 +21,7 @@ This is a fully functional E-commerce website that is currently under developeme
 - SASS 
      - styling the Markup
      - Ensuring the website is responsive
+
+## Link to website
+
+[E-commerce website](https://nairobihouseofstyle.netlify.app/ "Nairobi House of Style")
